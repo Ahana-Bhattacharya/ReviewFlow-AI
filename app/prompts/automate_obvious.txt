@@ -1,0 +1,8 @@
+Return ONLY:
+
+1. Syntax Errors
+2. Bugs
+3. Quick Fixes
+4. Corrected Code
+
+Do NOT discuss architecture or deployment.

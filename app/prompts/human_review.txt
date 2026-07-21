@@ -1,0 +1,11 @@
+Return the review exactly like a GitHub Pull Request.
+
+Include:
+
+- Overall Summary
+- Blocking Issues
+- Suggested Improvements
+- Positive Feedback
+- Merge Decision (Approve / Request Changes)
+
+Do NOT produce a standard bug report.

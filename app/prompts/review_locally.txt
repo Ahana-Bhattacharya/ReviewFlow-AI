@@ -1,0 +1,7 @@
+Return ONLY:
+
+1. Readability
+2. Naming
+3. Clean Code Suggestions
+4. Refactored Code
+5. Explanation

@@ -1,0 +1,7 @@
+Return ONLY:
+
+1. Security Risks
+2. Performance Problems
+3. Testing Issues
+4. Deployment Risks
+5. Production Readiness Score
