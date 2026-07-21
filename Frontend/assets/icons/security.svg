@@ -1,0 +1,38 @@
+<svg width="64" height="64"
+viewBox="0 0 64 64"
+xmlns="http://www.w3.org/2000/svg">
+
+
+<path
+
+d="
+M32 5
+L55 15
+V30
+C55 45 45 55 32 60
+C19 55 9 45 9 30
+V15
+Z"
+
+fill="#22d3ee"/>
+
+
+<path
+
+d="
+M25 32
+L30 37
+L41 24"
+
+stroke="white"
+
+stroke-width="5"
+
+fill="none"
+
+stroke-linecap="round"
+
+stroke-linejoin="round"/>
+
+
+</svg>

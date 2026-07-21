@@ -1,0 +1,122 @@
+<svg 
+    width="200" 
+    height="200" 
+    viewBox="0 0 200 200" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg">
+
+
+<!-- Background Circle -->
+
+<circle 
+    cx="100" 
+    cy="100" 
+    r="100" 
+    fill="#0f172a"/>
+
+
+
+<!-- Gradient Definition -->
+
+<defs>
+
+<linearGradient 
+id="gradient"
+x1="0"
+y1="0"
+x2="200"
+y2="200">
+
+<stop 
+offset="0%" 
+stop-color="#6366f1"/>
+
+<stop 
+offset="100%" 
+stop-color="#22d3ee"/>
+
+</linearGradient>
+
+</defs>
+
+
+
+
+<!-- Code Branch Icon -->
+
+
+<path
+
+d="
+M70 45
+V85
+C70 100 85 110 100 110
+H125
+
+M100 110
+V155
+
+M125 110
+L150 85
+"
+
+stroke="url(#gradient)"
+
+stroke-width="12"
+
+stroke-linecap="round"
+
+stroke-linejoin="round"
+
+/>
+
+
+
+<!-- Nodes -->
+
+<circle
+cx="70"
+cy="45"
+r="12"
+fill="#6366f1"
+/>
+
+
+<circle
+cx="100"
+cy="155"
+r="12"
+fill="#22d3ee"
+/>
+
+
+<circle
+cx="150"
+cy="85"
+r="12"
+fill="#22d3ee"
+/>
+
+
+<!-- AI Spark -->
+
+<path
+
+d="
+M135 45
+L140 60
+L155 65
+L140 70
+L135 85
+L130 70
+L115 65
+L130 60
+Z
+"
+
+fill="white"
+
+/>
+
+
+</svg>
