@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta 
+name="description"
+content="ReviewFlow AI is an intelligent AI-powered code review platform using Large Language Models to analyze, improve and validate software code."
+>
+
+
+<meta
+name="keywords"
+content="AI Code Review, LLM, Developer Assistant, Software Engineering, Code Quality"
+>
+
+
+<meta
+name="author"
+content="ReviewFlow AI"
+>
+
+
+<title>
+ReviewFlow AI | Intelligent Code Review Platform
+</title>
+
+
+
+<link
+rel="icon"
+type="image/svg+xml"
+href="assets/favicon.svg"
+/>
+
+
+<link
+rel="stylesheet"
+href="style.css"
+/>
+
+
+</head>
+
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<header>
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+
+<img
+src="assets/logo.svg"
+class="logo-image"
+alt="ReviewFlow AI Logo"
+/>
+
+
+<span>
+ReviewFlow AI
+</span>
+
+
+</div>
+
+
+
+
+<ul class="nav-links">
+
+
+<li>
+<a href="#home" class="active">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="#review">
+Review
+</a>
+</li>
+
+
+<li>
+<a href="#features">
+Features
+</a>
+</li>
+
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section
+class="hero"
+id="home"
+>
+
+
+<div class="hero-content">
+
+
+<h1>
+
+AI Powered
+
+<span>
+Code Review Pipeline
+</span>
+
+</h1>
+
+
+
+<p>
+
+ReviewFlow AI uses Large Language Models
+to analyze, improve and validate source code
+through a four-layer intelligent review system.
+
+</p>
+
+
+
+<button
+class="primary-btn"
+onclick="scrollToReview()"
+>
+
+Start Code Review
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="pipeline-card">
+
+
+<h3>
+
+
+<img
+src="assets/icons/pipeline.svg"
+class="small-icon"
+alt="AI Pipeline"
+/>
+
+
+AI Review Pipeline
+
+
+</h3>
+
+
+
+
+<div class="pipeline-step">
+
+<span class="number">
+01
+</span>
+
+<div>
+
+<h4>
+Automate The Obvious
+</h4>
+
+<p>
+Detect bugs, syntax errors and common programming mistakes.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="pipeline-step">
+
+<span class="number">
+02
+</span>
+
+<div>
+
+<h4>
+Review Locally
+</h4>
+
+<p>
+Explain code and suggest better implementations.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="pipeline-step">
+
+<span class="number">
+03
+</span>
+
+<div>
+
+<h4>
+CI Validation
+</h4>
+
+<p>
+Check security, quality and production readiness.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="pipeline-step">
+
+<span class="number">
+04
+</span>
+
+<div>
+
+<h4>
+Human Review
+</h4>
+
+<p>
+Generate professional pull request feedback.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= FEATURES ================= -->
+
+
+<section
+class="features"
+id="features"
+>
+
+
+<h2>
+AI Review Capabilities
+</h2>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+<img
+src="assets/icons/bug.svg"
+class="feature-icon"
+alt="Bug Detection"
+/>
+
+
+<h3>
+Bug Detection
+</h3>
+
+
+<p>
+Find logical errors, bugs and code smells.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<img
+src="assets/icons/security.svg"
+class="feature-icon"
+alt="Security"
+/>
+
+
+<h3>
+Security Analysis
+</h3>
+
+
+<p>
+Detect vulnerabilities and unsafe coding practices.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<img
+src="assets/icons/performance.svg"
+class="feature-icon"
+alt="Performance"
+/>
+
+
+<h3>
+Performance Review
+</h3>
+
+
+<p>
+Analyze efficiency and optimization opportunities.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<img
+src="assets/icons/human-review.svg"
+class="feature-icon"
+alt="Human Review"
+/>
+
+
+<h3>
+Human Review Assistant
+</h3>
+
+
+<p>
+Generate PR comments and reviewer suggestions.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= REVIEW SECTION ================= -->
+
+
+<section
+class="review-section"
+id="review"
+>
+
+
+<h2>
+Analyze Your Code
+</h2>
+
+
+
+
+<div class="review-container">
+
+
+
+<div class="code-panel">
+
+
+<label>
+Programming Language
+</label>
+
+
+<select id="language">
+
+
+<option value="python">
+Python
+</option>
+
+
+<option value="javascript">
+JavaScript
+</option>
+
+
+<option value="java">
+Java
+</option>
+
+
+<option value="cpp">
+C++
+</option>
+
+
+<option value="csharp">
+C#
+</option>
+
+
+<option value="go">
+Go
+</option>
+
+
+</select>
+
+
+
+
+<label>
+Paste Source Code
+</label>
+
+
+<textarea
+id="codeInput"
+placeholder="Paste your code here..."
+spellcheck="false"
+></textarea>
+
+
+
+
+
+<div class="button-group">
+
+
+<button
+id="reviewBtn"
+class="primary-btn"
+>
+
+Run AI Review
+
+</button>
+
+
+<button
+id="clearBtn"
+class="secondary-btn"
+>
+
+Clear
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="result-panel">
+
+
+
+<h3>
+
+
+<img
+src="assets/icons/ai-spark.svg"
+class="small-icon"
+alt="AI"
+/>
+
+
+AI Review Report
+
+
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="review-tabs">
+
+<button data-tab="automate" class="active">
+Automated
+</button>
+
+<button data-tab="local">
+Local
+</button>
+
+<button data-tab="ci">
+CI
+</button>
+
+<button data-tab="human">
+Human
+</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div
+id="loader"
+class="loader hidden"
+>
+
+
+<div class="spinner"></div>
+
+
+<p>
+AI is reviewing your code...
+</p>
+
+
+<span>
+Checking bugs, security, performance and code quality
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="scoreCard">
+
+</div>
+
+
+
+
+
+
+
+<div id="result">
+
+<p>
+Your AI generated review will appear here...
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- NEW FIXED CODE -->
+
+
+<div id="fixedCode">
+
+</div>
+
+
+
+
+<!-- NEW DIFF VIEW -->
+
+
+<div id="diffViewer">
+
+</div>
+
+
+
+
+
+
+
+<button
+id="copyBtn"
+class="secondary-btn"
+>
+
+Copy Report
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+class="about"
+id="about"
+>
+
+<h2>
+About ReviewFlow AI
+</h2>
+
+
+<div class="about-content">
+
+
+<p>
+ReviewFlow AI is an intelligent AI-powered developer assistant designed to help developers create better, safer, and more reliable software. By combining Large Language Models (LLMs) with modern software engineering practices, it delivers automated code reviews, intelligent recommendations, and AI-assisted improvements throughout the development lifecycle.
+</p>
+
+
+<p>
+The platform analyzes source code to identify bugs, security vulnerabilities, performance bottlenecks, and maintainability issues. Instead of simply detecting problems, ReviewFlow AI understands code context and provides meaningful explanations, improvement suggestions, and actionable feedback that developers can apply directly.
+</p>
+
+
+<p>
+With AI-powered code fixing capabilities, ReviewFlow AI can generate improved versions of existing code, highlight changes through intelligent comparisons, and explain how each modification improves quality, security, and efficiency. This helps reduce debugging time and supports faster, more confident development decisions.
+</p>
+
+
+<p>
+Built for modern development workflows, ReviewFlow AI integrates automated reviews, CI validation, and collaborative feedback into a single intelligent platform. It bridges the gap between automated analysis tools and human expertise, enabling teams to deliver high-quality software with greater speed and reliability.
+</p>
+
+
+<p>
+Our mission is to empower developers with AI-driven assistance that improves productivity while maintaining strong standards for code quality, security, and software engineering excellence.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<p>
+
+© 2026 ReviewFlow AI
+
+<br>
+
+AI Assisted Software Engineering Platform
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- ================= SCRIPTS ================= -->
+
+
+<script src="components/navbar.js" defer></script>
+
+<script src="components/code-editor.js" defer></script>
+
+<script src="components/review-card.js" defer></script>
+
+<script src="components/score-card.js" defer></script>
+
+<script src="components/loader.js" defer></script>
+
+<script src="components/tabs.js" defer></script>
+
+<script src="components/stream-renderer.js" defer></script>
+
+
+<!-- NEW -->
+
+<script src="components/fixed-code.js" defer></script>
+
+<script src="components/diff-viewer.js" defer></script>
+
+
+<script src="script.js" defer></script>
+
+
+</body>
+
+</html>
