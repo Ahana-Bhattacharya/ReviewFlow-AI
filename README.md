@@ -81,10 +81,6 @@ Provides review assistance similar to feedback from a developer reviewing a pull
 
 ![ReviewFlow AI Hero](Frontend/assets/images/hero.png)
 
-### Dashboard
-
-![ReviewFlow AI Dashboard](Frontend/assets/images/dashboard.png)
-
 ---
 
 ## 🏗️ Architecture
